@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>JavaScript Fundamentals - Lab 1</H1>
+
+        <!-- Section 1-->
+        <h2>Data Types & Operators</h2>
+        <!--Section 1 Question 1-->
+        <h3>Calculate</h3>
+        <input type="text" id="num1" placeholder="Enter first number"/>
+        <label for="operators"></label>
+        <select id="operators">
+           <option value="add">+</option>
+           <option value="subtract">-</option>
+           <option value="multiple">x</option>
+           <option value="divide">/</option>
+        </select>
+        <input type="text" id="num2" placeholder="Enter second number"> = </input>     
+        <input type="text" id="result" readonly="true"/>
+        <button onclick="Calculate()">Calculate</button>
+        <br>
+
+        <!--Section 1 Question 2-->
+        <h3>Display Input</h3>
+        <input type="text" id="name" placeholder="Enter your name"/>
+        <button onclick="DisplayName()">Display Alert</button>
+        <br>
+        <br>
+        <hr>
+
+        <!-- Section 2-->
+        <h2>Control Flow</h2>
+        <!--Section 2 Question 1-->
+        <h3>Greater or Less than Check</h3>
+        <input type="text" id="value1" placeholder="Enter first number"/>
+        <input type="text" id="value2" placeholder="Enter second number"/>
+        <button onclick="CheckValue()">Check</button>
+        <div class="result">
+            <p>Result : </p>
+            <input type="text" id="valueResult" readonly="true"/>
+        </div>
+
+        <!--Section 2 Question 2-->
+        <h3>Iterate numbers</h3>
+        <input type="text" id="start" placeholder="Enter start number"/>
+        <input type="text" id="end" placeholder="Enter end number"/>
+        <button onclick="IterateNumbers()">Iterate</button>
+
+        <div class = "result">
+            <p>Result : </p>
+            <textarea id="iterateResult" readonly="true"></textarea>
+        </div>
+        <br>
+        <hr>
+
+        <!-- Section 3-->
+        <h2>Arrays</h2>
+        <!--Section 3 Question 1-->
+        <h3>Fruit Array</h3>
+        <div>
+            <input type="text" id="fruit" placeholder="Enter fruit name"/>
+            <button onclick="AddFruit()">Add</button>
+        </div>
+        <div>
+            <input type="text" id="removeFruitIndex" placeholder="Remove fruit by number"/>
+            <button onclick="RemoveFruit()">Remove</button>
+        </div>
+        <br>
+        <button onclick="UsePresetFruit()">Use Preset Fruits</button>
+        <button onclick="ClearFruit()">Clear List</button>
+        <br>
+        <div class="result">
+            <p>Fruit List : </p>
+            <textarea id="fruitResult" readonly="true"></textarea>
+        </div>
+        <br>
+        <input type="text" id="selectFruitIndex" placeholder="Select Fruit by number"/>
+        <button onclick="SelectFruit()">Select</button>
+        <br>
+        <div class="result">
+            <p>Selected Fruit : </p>
+            <input type="text" id="selectedFruit" readonly="true"/>
+        </div>
+        
+        <!--Section 3 Question 2-->
+        <h3>Number Array</h3>
+        <div >
+            <p>Enter a list of numbers below. Separate using a comma.</p>
+            <input type="text" id="arrayNumberList" placeholder="Enter the list of numbers"/>
+            <button onclick="AddNumberToArray()">Add</button>
+        </div>
+        <br>
+        <button onclick="UsePresetNumbers()">Use Preset Numbers</button>
+        <button onclick="ClearNumberArray()">Clear List</button>
+
+        <div class="result">
+            <p>Number List : </p>
+            <textarea id="arrayNumberListResult" readonly="true"></textarea>
+        </div>
+        <br>
+        <hr>
+        
+        <!-- Section 4-->
+        <h2>Functions</h2>
+        <!--Section 3 Question 1-->
+        <h3>Trigger Direct Functions</h3>
+        <input type="text" id="greetingName" placeholder="Whats your name ?"/>
+        <button onclick="Greet()">Enter</button>
+        <br>
+        <hr>
+
+        <!-- Section 5-->
+        <h2>Data Types, Logic & Operators </h2>
+        <!--Section 1 Question 1-->
+        <h3>Continues Calculate</h3>
+        <input type="text" id="x" placeholder="Enter first number"/>
+        <label for="continuesOperators"></label>
+        <select id="continuesOperators">
+           <option value="add">+</option>
+           <option value="subtract">-</option>
+           <option value="multiple">x</option>
+           <option value="divide">/</option>
+           <option value="equal">=</option>
+           <option value="remainder">%</option>
+           <option value="leftShift">Left Shift</option>
+           <option value="rightShift">Right Shift</option>
+           <option value="zeroFillsRightShift">Zero-Fills Right Shift</option>
+           <option value="bitwiseAnd">Bitwise AND</option>
+           <option value="bitwiseOr">Bitwise OR</option>
+           <option value="bitwiseXor">Bitwise XOR</option>
+           <option value="power">Power</option>
+        </select>
+        <input type="text" id="y" placeholder="Enter second number"></input>     
+        <button id="calButton" onclick="ContinuesCalculate()">Initial Calculation</button>
+
+        <div class="result">
+            <p>Result : </p>
+            <p id="continuesCalResults"></p>
+        </div>
+        <button onclick="ClearContinuesCalResults()">Clear</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+
+
+        <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

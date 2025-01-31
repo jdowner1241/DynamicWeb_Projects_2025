@@ -1,0 +1,81 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(5, 5, 83);
+    text-align: left;
+    text-decoration: underline;
+}
+
+h3 {
+    color: blue;
+    text-align: left;
+}
+
+hr {
+    border: 1.5px solid black;
+    border-style: dashed;
+}
+
+p {
+    font-family: verdana;
+    font-size: 15px;
+    
+}
+
+button {
+    background-color: #36a6ec;
+    color: white;
+    padding: 5px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1ef8;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    size: 10px;
+    color: blueviolet;
+    font-style: italic;
+    font-weight:bold;
+}
+.result input[type="text"] {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.result textarea {
+    width: 90%;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#continuesCalResults {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 12px;
+    color: inherit; 
+    font-style: inherit;
+    font-weight: inherit;
+}
