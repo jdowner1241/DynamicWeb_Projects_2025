@@ -8,7 +8,7 @@ function qus1() {
     let sum = x + y;
     sum = parseInt(sum);
 
-    let result = document.getElementById("ques1Result");
+    let result = document.getElementById("demo");
     result.innerHTML = `Result : ${sum}`; 
 }
 
