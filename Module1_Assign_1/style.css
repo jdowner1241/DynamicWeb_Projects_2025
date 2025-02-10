@@ -34,3 +34,13 @@ button {
     border-radius: 7px;
     margin: 5px;
 }
+
+button:hover {
+    background-color: aqua;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+}
