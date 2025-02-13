@@ -4,10 +4,12 @@ let toggleQus11 = false;
 
 function mouseOverHandler() {
     this.style.color = "blue";
+    this.style.fontWeight = "bold";
 }
 
 function mouseOutHandler() {
     this.style.color = "";
+    this.style.fontWeight = "normal";
 }
 
 function qus11() {

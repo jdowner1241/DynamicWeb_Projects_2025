@@ -12,6 +12,7 @@
     padding-left: 5px;
     padding-right: 5px;
     background-color: silver;
+    box-shadow: 5px 0px 5px 0px lightgray;
 
 }
 
@@ -30,9 +31,17 @@ h2 {
     color: rgb(35, 181, 248);
 }
 
+p {
+    font-size: 20px;
+}
+
 button {
     border-radius: 7px;
     margin: 5px;
+    padding: 5px;
+    border: none;
+    background: lightskyblue;
+    color: black;
 }
 
 button:hover {

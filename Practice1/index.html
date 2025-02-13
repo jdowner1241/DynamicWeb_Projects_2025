@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>DOM Manipulation </h1>
 
     <div>
+        <h2>Text Manipulation</h2>
+        <p id="para1">This paragraph will be updated using JavaScript.</p>
+        <button id="changeText">Change Text</button>
+        <button id="changeStyle">Change Style</button>
+    </div>
+
+  <div>
+        <h2>Element Creation</h2>
+        <div id="container">
+            <p class="para2">First paragrapgh inside the container.</p>
+            <p class="para2">Second paragraph inside the container.</p>
+        </div>
+        <button id="addElement">Add Element</button>
+    </div>
+
+    <div>
         <h2>Attribute Manipulation</h2>
         <img id="lightBulb" src="img/pic_bulboff.gif" alt="lightBulbImage"/>
+        <br>
         <button id="lightSwitch" onclick="toggleLightSwitch()">Toggle Light Switch</button>
 
+    </div>
+
+    <div>
+        <h2>Mouse Hover Event</h2>
+        <div id="hoverBox" class="box">Hover over me!</div>
     </div>
     
     <div>
@@ -34,6 +58,59 @@
         </ul>
         <button id="bAnimateList">Animate List</button>
     </div>
+
+    <div>
+        <h2>Form Validation</h2>
+        <form action="" id="userForm">
+            <p><label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error" id="usernameError"></span>
+            </p>
+             
+            <p><label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </p>
+    
+            <p><label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+            </p>
+    
+            <p><label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <span class="error" id="dobError"></span>
+            </p>
+    
+            <fieldset>
+                <legend>Enable/Disable Fields</legend>
+                <label><input type="radio" name="toggle" value="enable" checked>Enable</label>
+                <label><input type="radio" name="toggle" value="disable">Disable</label>
+            </fieldset>
+    
+            <p>
+                <label for="preferences">Preferences</label>
+                <select name="preferences" id="preferences">
+                    <option value="dark" >Dark Theme</option>
+                    <option value="light">Light Theme</option>
+                    <option value="blue">Blue theme</option>
+                </select>
+            </p>
+    
+            <fieldset id="interestsField">
+                <legend>Interests</legend>
+                <input type="checkbox" name="interest" value="coding">coding
+                <input type="checkbox" name="interest" value="gaming">gaming
+                <input type="checkbox" name="interest" value="reading">reading
+            </fieldset>
+            
+            <button type="button" id="submitForm">Submit</button>
+            
+            <p id="formOutput"></p>
+            
+        </form>
+    </div>
+
 
     <script type="text/JavaScript" src="app.js"></script>
 </body>
