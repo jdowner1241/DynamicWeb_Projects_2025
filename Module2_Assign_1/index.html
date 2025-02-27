@@ -44,36 +44,34 @@
             <input type ="text" id="firstName">
             <span class=" error" id="firstNameError"></span>
 
-            <label>Last Name*</label>
+            <label for="lastName">Last Name*</label>
             <input type ="text" id="lastName">
             <span class=" error" id="lastNameError"></span>
 
-            <label>Email*</label>
+            <label for="email">Email*</label>
             <input type ="email" id="email">
             <span class=" error" id="emailError "></span>
 
-            <label>address*</label>
+            <label for="address">address*</label>
             <input type ="text" id="address">
-            <span class=" error" id="addressError"></span>
+            <span class="error" id="addressError"></span>
 
             <h2> Payment Method </h2>
             <input type="radio"name="payment" id="Visa" value="Mastercard" checked> credit card 
             <input type ="radio" name ="payment" id="paypal">paypal 
 
             <div id="creditcardfield">
-            <label> Card Number*</label>
-            <input type ="text" id="cardNumber" maxlength="16">
-            <span class = "error" id="cardNumberError"></span>
-            
-            
-            <label>Expiry Date (MM/YY)*</label>
-            <input type="text" id="expirydate" placeholder="MM/YY" maxlength="5">
-            <span class ="error" id="expiryDateError"></span>
-            
-            <label>CVV*</label>
-            <input type ="text" id="cvv" maxlenght="3">
-            <span class="error" id="cvvError"></span>
-            
+                <label> Card Number*</label>
+                <input type ="text" id="cardNumber" maxlength="16">
+                <span class = "error" id="cardNumberError"></span>
+                
+                <label>Expiry Date (MM/YY)*</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                <span class ="error" id="expiryDateError"></span>
+                
+                <label>CVV*</label>
+                <input type ="text" id="cvv" maxlenght="3">
+                <span class="error" id="cvvError"></span>
             </div>
         
             <h2>Shipping Information</h2>
@@ -82,7 +80,7 @@
             </label>
         
             <div id="shippingFields" class="hidden">
-                <label> Street Adresss </label>
+                <label> Street Address </label>
                 <input type ="text" id="shippingAddress">
             
                 <label> State/Province</label>
@@ -93,19 +91,18 @@
             
                 <label>Zip code</label>
                 <input type ="text" id = "zip">
-            
             </div>
             <button type ="submit">Submit</button>
         
         
             <label for="countrySelect">Select a Country:</label>
-                <!-- <input list="browsers" name="browser" class="custom-select custom-select-sm"> -->
-                <!-- <datalist id="browsers"> -->
-                    <select id="countrySelect">
-                        <option value="">--Select a Country--</option>
-                    </select>
-                <!-- </datalist> -->
-            </form>
+            <!-- <input list="browsers" name="browser" class="custom-select custom-select-sm"> -->
+            <!-- <datalist id="browsers"> -->
+                <select id="countrySelect">
+                    <option value="">--Select a Country--</option>
+                </select>
+            <!-- </datalist> -->
+        </form>
     </div>
 
     <!-- Questions 3 -->
@@ -123,12 +120,12 @@
                     <th>Salary</th>
                 </tr>
             </thead>
-            <td>10</td>
+            <!-- <td>10</td>
             <td>samuel</td>
             <td>smith</td>
             <td>samuelsmith@gmail.com</td>
             <td>Information systems</td>
-            <td>350,000</td>
+            <td>350,000</td> -->
                 <!-- Data will be populated here by DataTables -->
             </td>
         </table>
