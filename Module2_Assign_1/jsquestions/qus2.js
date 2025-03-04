@@ -1,3 +1,6 @@
+
+
+
 document.querySelectorAll('input[name="payment"]').forEach(radio => {
     radio.addEventListener('change', function() {
         let isPayPal = document.getElementById('paypal').checked;
