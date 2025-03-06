@@ -43,6 +43,10 @@
             .card:hover {
               box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
             }
+
+            .error{
+                color:red;
+            }
                         </style>
 
 
@@ -99,7 +103,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="banner-img">
-                                <h2>Our Project</h2>
+                             
                             </div>
                         </div>
                     </div>
@@ -129,6 +133,175 @@
                                                 <button id="btnLocalStorageQus1c">Update Local Storage</button>
                                             </section>
                                         </div>
+
+
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-toggle">Question 2 : Form Design and Validation</h4>
+                                           
+
+                                       
+                                            <section class="accordion-inner panel-body">
+                                                <button type="button" onclick="myFunction()" class="btn btn-danger" data-toggle="modal" data-target="#registrationModal">
+                                                    Payment
+                                                   </button>
+                                                <div class="modal register fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModal" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h2 class="form-signin-heading modal-title" id="registrationModalLabel">Billing Information</h2>
+                                                        </div>
+                                                        <form id="paymentForm">
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-6">
+                                                                                <label for="firstName">First Name *</label>
+                                                                                <input class="form-control" type ="text" id="firstName">
+                                                                                <span class="error" id="firstNameError"></span>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <label for="lastName">Last Name*</label>
+                                                                                <input class="form-control" type ="text" id="lastName">
+                                                                                <span class=" error" id="lastNameError"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label for="email">Email*</label>
+                                                                                <input  class="form-control" type ="email" id="email">
+                                                                                <span class=" error" id="emailError"></span>
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label for="address">Address*</label>
+                                                                                <input class="form-control" type ="text" id="address">
+                                                                                <span class="error" id="addressError"></span>
+                                                                           
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <h3>&nbsp;&nbsp;Payment Method</h3>
+                                                                            <div class="col-md-6">
+                                                                             
+                                                                                <span style="padding-right:3px; padding-top: 3px;">
+                                                    
+                                                                                    <img class="" src="img/creditcard.jpeg" width="80px"></img> Credit Card
+                                                                                
+                                                                                    </span>
+                                    
+                                    
+                                                                                <input type="radio"  class="form-group" name="payment" id="Visa" value="Mastercard" checked>
+                                                                                <span>
+                                                                                 
+                                                                 
+                                                                               
+                                                                          
+                                                                          
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <img  class="" src="img/paypal.png" width="70px"></img> Pay pal
+                                    
+                                                                                 
+                                                                            </span>
+                                                                        <input type ="radio"  class="form-group" name ="payment" id="paypal">   
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                    
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label> Card Number*</label>
+                                                                                <input class="form-control" type ="text" id="cardNumber" maxlength="16">
+                                                                                <span class = "error" id="cardNumberError"></span>
+                                                                           
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <h3>&nbsp;&nbsp;Card Info</h3>
+                                                                            <div class="col-md-6">
+                                                                             
+                                                                                <label>Expiry Date (MM/YY)*</label>
+                                                                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                                                                                <span class ="error" id="expiryDateError"></span> 
+                                    
+                                    
+                                                                          
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <label>CVV*</label>
+                                                                                <input class="form-control" type ="text" id="cvv" maxlenght="3">
+                                                                                <span class="error" id="cvvError"></span>
+                                                                
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h3>&nbsp;&nbsp;Shipping Info</h3>
+                                                                           
+                                                                            <label for="sameAsBilling"></label>
+                                                                            <input class="form-control-sm"  type="checkbox" id="sameAsBilling" checked> same as Billing Information
+                                                                        
+                                                                              
+                                                                                            <label for="lastName">Street Addres*</label>
+                                                                                               <input id="shippingAddress" class="form-control" type ="text">
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                   
+                                                                                  
+                                                                                </div> 
+                                                                         </div>
+                                                                         <div class="row">
+                                                                            <div class=" col-md-6">
+                                                                                
+                                                                                    <label for="state">State/Province*</label>
+                                                                                    <input  class="form-control" type ="text" id="state">
+                                                                          
+                                                                                </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <label for="countrySelect">Select a Country:</label>
+                                                                                 <input list="browsers" name="browser" class="custom-select custom-select-sm form-control "> 
+                                                                                 <datalist id="browsers" class=""> 
+                                                                                    <select id="countrySelect" class="form-control col-md-8">
+                                                                                        <option value="">--Select a Country--</option>
+                                                                                    </select> 
+                                                                                    </datalist>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn btn-success">Pay Now</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           
+                                            </section>
+                                        </div>
+                                        
                                         <div class="accordion-item">
                                             <h4 class="accordion-toggle">Question 3 : Loading and Displaying Data in DataTables</h4>
                                             <section class="accordion-inner panel-body">
@@ -159,218 +332,6 @@
     </div>
                                             </section>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h4 class="accordion-toggle">Question 2 : Form Design and Validation</h4>
-                                            <section class="accordion-inner panel-body">
-                                                <center> <h1> Form Validation  Using HTML, CSS Javascript </h1></center>
-                                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 ">
-                                                    <form id="paymentForm">
-                                                    <h2>Payment Form</h2>
-                                                    <form method="post" class="reply card" id="contact">
-                                                        <fieldset>
-                                                            <div class="">
-                                                            <div class="row">
-                                                                <h3>&nbsp;&nbsp;Billing Information</h3>
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                  
-                                                                    <label for="firstName">Name *</label>
-                                                                    <input class="form-control" type ="text" id="firstName">
-                                                                    <span class=" error" id="firstNameError"></span>
-                                                               
-                                                               
-                                                               
-                                                               
-                                                                </div>
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                    <label for="lastName">Last Name*</label>
-                                                                       <input class="form-control" type ="text" id="lastName">
-                                                                       <span class=" error" id="lastNameError"></span>
-                                                               
-                                                               
-                                                               
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                    <label for="email">Email*</label>
-                                                                    <input  class="form-control" type ="email" id="email">
-                                                                    <span class=" error" id="emailError "></span>
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                </div>
-                                                            </div>
-                    
-                    
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                   <label for="address">address*</label>
-                                <input class="form-control" type ="text" id="address">
-                                <span class="error" id="addressError"></span>
-                                                                </div>
-                                                            </div>
-                    
-                                                        </div>
-                    
-                    
-                                                            <div class="row">
-                                                                <h3>&nbsp;&nbsp;Payment Method</h3>
-                                                             
-                                                                <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
-                                                               
-                    
-                                                                      <span style="padding-right:3px; padding-top: 3px;">
-                    
-                                                                        <img class="" src="img/creditcard.jpeg" width="150px"></img> 
-                                                                    
-                                                                        </span>
-                    
-                    
-                                                                    <input type="radio"  class="form-control" name="payment" id="Visa" value="Mastercard" checked>
-                                                                    
-                                                                
-                                                                </div>
-                                                                <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
-                    
-                                                                    <span>
-                                                                        <img  class="" src="img/paypal.png" width="150px"></img>
-                    
-                                                                     
-                                                                    </span>
-                                                                <input type ="radio"  class="form-control" name ="payment" id="paypal">   
-                                                     
-                                                                </div>
-                                                            </div>
-                                                    
-                                                            <div id="creditcardfield" class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    
-                    
-                                                                    <label> Card Number*</label>
-                                                                    <input class="form-control" type ="text" id="cardNumber" maxlength="16">
-                                                                    <span class = "error" id="cardNumberError"></span>
-                                                                </div>    
-                                                                
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                    <label>Expiry Date (MM/YY)*</label>
-                                                                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" maxlength="5">
-                                                                    <span class ="error" id="expiryDateError"></span> 
-                                                                
-                                                                
-                                                                
-                                                                </div>
-                    
-                    
-                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                    <label>CVV*</label>
-                                                                    <input class="form-control" type ="text" id="cvv" maxlenght="3">
-                                                                    <span class="error" id="cvvError"></span>
-                                                                
-                                                                </div>
-                    
-                                                              
-                                                                   
-                                                             
-                                                            </div>
-                                                         
-                                                          
-                                                            <div class="">
-                                                                <div class="row">
-                                                                    <h3>&nbsp;&nbsp;Shipping Information</h3>
-                                                                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                                                                      
-                                                                        <label for="sameAsBilling"></label>
-                                                                        <input class="form-control-sm"  type="checkbox" id="sameAsBilling" checked> same as Billing Information
-                                                                    
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <label for="lastName">Street Addres*</label>
-                                                                           <input id="shippingAddress" class="form-control" type ="text">
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                        <label for="state">State/Province*</label>
-                                                                        <input  class="form-control" type ="text" id="state">
-                                                               
-                                                                    
-                                                                    
-                                                                    
-                                                                    
-                                                                    </div>
-                                                                </div>
-                    
-                                                                <label for="countrySelect">Select a Country:</label>
-                                                                <!-- <input list="browsers" name="browser" class="custom-select custom-select-sm"> -->
-                                                                <!-- <datalist id="browsers"> -->
-                                                                    <select id="countrySelect" class="form-control col-md-8">
-                                                                        <option value="">--Select a Country--</option>
-                                                                    </select>
-                                                                </form>
-                                                                <div class="row">
-                                                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                                               
-                                                                
-                                                             
-                                                                    
-                                                                    
-                                                                    </div>
-                    
-                    
-                    
-                    
-                                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                                        <label for="country">Zip Code*</label>
-                                                                        <input  class="form-control" type ="text" id="zip">
-                                                                       
-                                                                    
-                                                                    
-                                                                    
-                                                                    
-                                                                    </div>
-                    
-                                                                </div>
-                        
-                        
-                                                             
-                        
-                                                            </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                                                        </fieldset>
-                    
-                    
-                                                        
-                                                     
-                    
-                    
-                                                        <button class="btn btn-color submit pull-right" type="submit">Apply</button>
-                                                        <div class="success alert-success alert" style="display:none">Your have been applied successfully.</div>
-                                                        <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                    </form>
-                    
-                                                </div>
-                                           
-       
-                                            </section>
-                                        </div>
                                     </div>
                                     <!-- /Accordin -->
                                 </div>
@@ -398,6 +359,13 @@
                 </div>
                 <!-- /Main Content -->
             </section>
+
+
+           
+
+
+
+
             <!-- /Main Section -->
             <!-- Footer Start -->
             <footer id="footer">
@@ -502,50 +470,7 @@
                 </div>
                 <!-- /Logan Modal -->
                 <!-- Registration Modal -->
-                <div class="modal register fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModal" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h2 class="form-signin-heading modal-title" id="registrationModalLabel">Create a new account</h2>
-                        </div>
-                        <form method="post" id="registration">
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <div class="col-md-6">
-                                                <input type="text" value="" class="form-control" placeholder="First Name">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="text" value="" class="form-control" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <input type="text" value="" class="form-control" placeholder="E-mail Address">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <div class="col-md-6">
-                                                <input type="password" value="" class="form-control" placeholder="Password">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="password" value="" class="form-control" placeholder="Re-enter Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-color">Register</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            
                 <!-- /Registration Modal -->
             </section>
             <!-- Scroll To Top --> 
