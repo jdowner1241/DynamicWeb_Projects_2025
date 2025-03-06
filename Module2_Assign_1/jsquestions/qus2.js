@@ -22,6 +22,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(event
 let fname=document.getElementById('firstName').value;
 let lname=document.getElementById('lastName').value;
 let email=document.getElementById('email').value;
+let address=document.getElementById('address').value;
 
 if(fname==""){
 alert('Please Enter Firstname !');
@@ -46,17 +47,39 @@ if(lname==""){
     }
 
 
+    let emailRegexPattern = /^[a-zA-Z0-9 ._ %+-]+@[a-zA-Z0-9. -]+\.[a-zA-Z]{2,}$/;
+    
     if(email==""){
         alert('Please Enter Email Address !');
         document.getElementById('emailError').innerHTML='Email is required';
         document.getElementById('email').focus();
         exit();
+
+            if (!emailRegexPattern.test(email)) {
+                alert('Please Enter a Valid Email Address !');
+                document.getElementById("emailError").innerHTML = 'Enter a valid Email Address.';
+                document.getElementById('email').focus();
+                exit();
+            }
+            else{
+                document.getElementById('emailError').innerHTML = '';
+            }
         }
         else{
             document.getElementById('emailError').innerHTML='';
     
         }
 
+        if(address==""){
+            alert('Please Enter an Address !');
+            document.getElementById('addressError').innerHTML='Address is required';
+            document.getElementById('address').focus();
+            exit();
+            }
+            else{
+                document.getElementById('addressError').innerHTML='';
+        
+            }
 
     const validateField = (id, errorId, message) => {
         let value = document.getElementById(id).value.trim();
