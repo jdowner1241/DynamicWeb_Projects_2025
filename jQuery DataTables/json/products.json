@@ -1,0 +1,239 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "category": "Electronics",
+        "price": 29.99
+      },
+      {
+        "id": 2,
+        "name": "Gaming Keyboard",
+        "category": "Electronics",
+        "price": 59.99
+      },
+      {
+        "id": 3,
+        "name": "Office Chair",
+        "category": "Furniture",
+        "price": 89.99
+      },
+      {
+        "id": 4,
+        "name": "Noise Cancelling Headphones",
+        "category": "Electronics",
+        "price": 199.99
+      },
+      {
+        "id": 5,
+        "name": "4K Monitor",
+        "category": "Electronics",
+        "price": 299.99
+      },
+      {
+        "id": 6,
+        "name": "Leather Office Desk",
+        "category": "Furniture",
+        "price": 149.99
+      },
+      {
+        "id": 7,
+        "name": "Bluetooth Speaker",
+        "category": "Electronics",
+        "price": 49.99
+      },
+      {
+        "id": 8,
+        "name": "Running Shoes",
+        "category": "Clothing",
+        "price": 79.99
+      },
+      {
+        "id": 9,
+        "name": "Smartwatch",
+        "category": "Electronics",
+        "price": 149.99
+      },
+      {
+        "id": 10,
+        "name": "Mechanical Pencil Set",
+        "category": "Accessories",
+        "price": 14.99
+      },
+      {
+        "id": 11,
+        "name": "Ultrawide Monitor",
+        "category": "Electronics",
+        "price": 399.99
+      },
+      {
+        "id": 12,
+        "name": "Stylish Backpack",
+        "category": "Accessories",
+        "price": 39.99
+      },
+      {
+        "id": 13,
+        "name": "Smartphone Stand",
+        "category": "Accessories",
+        "price": 19.99
+      },
+      {
+        "id": 14,
+        "name": "Noise Isolating Earbuds",
+        "category": "Electronics",
+        "price": 29.99
+      },
+      {
+        "id": 15,
+        "name": "Wireless Charger",
+        "category": "Electronics",
+        "price": 24.99
+      },
+      {
+        "id": 16,
+        "name": "Wooden Bookshelf",
+        "category": "Furniture",
+        "price": 199.99
+      },
+      { "id": 17, "name": "Desk Lamp", "category": "Furniture", "price": 34.99 },
+      {
+        "id": 18,
+        "name": "Winter Jacket",
+        "category": "Clothing",
+        "price": 129.99
+      },
+      {
+        "id": 19,
+        "name": "Digital Drawing Tablet",
+        "category": "Electronics",
+        "price": 349.99
+      },
+      {
+        "id": 20,
+        "name": "Men's Leather Belt",
+        "category": "Clothing",
+        "price": 24.99
+      },
+      {
+        "id": 21,
+        "name": "Graphic T-Shirt",
+        "category": "Clothing",
+        "price": 19.99
+      },
+      {
+        "id": 22,
+        "name": "Jogging Pants",
+        "category": "Clothing",
+        "price": 49.99
+      },
+      {
+        "id": 23,
+        "name": "Smartphone Tripod",
+        "category": "Accessories",
+        "price": 34.99
+      },
+      {
+        "id": 24,
+        "name": "Fitness Tracker",
+        "category": "Electronics",
+        "price": 69.99
+      },
+      {
+        "id": 25,
+        "name": "Wireless Earbuds",
+        "category": "Electronics",
+        "price": 89.99
+      },
+      {
+        "id": 26,
+        "name": "Leather Wallet",
+        "category": "Accessories",
+        "price": 39.99
+      },
+      {
+        "id": 27,
+        "name": "Foldable Table",
+        "category": "Furniture",
+        "price": 129.99
+      },
+      {
+        "id": 28,
+        "name": "Cooling Gel Pillow",
+        "category": "Furniture",
+        "price": 49.99
+      },
+      {
+        "id": 29,
+        "name": "Sunglasses",
+        "category": "Accessories",
+        "price": 29.99
+      },
+      {
+        "id": 30,
+        "name": "Laptop Stand",
+        "category": "Accessories",
+        "price": 34.99
+      },
+      {
+        "id": 31,
+        "name": "Compact Blender",
+        "category": "Electronics",
+        "price": 59.99
+      },
+      {
+        "id": 32,
+        "name": "Cotton Hoodie",
+        "category": "Clothing",
+        "price": 54.99
+      },
+      {
+        "id": 33,
+        "name": "LED Desk Light",
+        "category": "Electronics",
+        "price": 39.99
+      },
+      {
+        "id": 34,
+        "name": "Stainless Steel Water Bottle",
+        "category": "Accessories",
+        "price": 24.99
+      },
+      {
+        "id": 35,
+        "name": "Men's Running Shorts",
+        "category": "Clothing",
+        "price": 29.99
+      },
+      {
+        "id": 36,
+        "name": "Ultra Thin Laptop",
+        "category": "Electronics",
+        "price": 999.99
+      },
+      {
+        "id": 37,
+        "name": "Portable Hard Drive",
+        "category": "Electronics",
+        "price": 129.99
+      },
+      {
+        "id": 38,
+        "name": "Air Purifier",
+        "category": "Electronics",
+        "price": 199.99
+      },
+      {
+        "id": 39,
+        "name": "Backlit Mechanical Keyboard",
+        "category": "Electronics",
+        "price": 79.99
+      },
+      {
+        "id": 40,
+        "name": "High-Quality Tripod",
+        "category": "Accessories",
+        "price": 89.99
+      }
+    ]
+  }
