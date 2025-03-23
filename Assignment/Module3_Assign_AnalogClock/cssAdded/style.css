@@ -1,41 +1,6 @@
 /* Custom Stylesheet to Enhance Bootstrap */
 
 /* General Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light Bootstrap background */
-    color: #212529; /* Bootstrap text color */
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar Customization */
-.navbar {
-    background-color: #343a40; /* Dark Bootstrap color */
-    border-bottom: 2px solid #ffc107; /* Accent color */
-}
-
-.navbar-brand, .navbar-nav .nav-link {
-    color: #ffffff !important;
-    size: 40px;
-    font-weight: bold;
-}
-
-.navbar-brand:hover, .navbar-nav .nav-link:hover {
-    color: #ffc107 !important; /* Accent color on hover */
-}
-
-/* Buttons */
-.btn-custom {
-    background-color: #007bff; /* Primary Bootstrap color */
-    color: #ffffff;
-    border: none;
-}
-
-.btn-custom:hover {
-    background-color: #0056b3; /* Darker shade of primary */
-    color: #ffffff;
-}
 
 /* Cards */
 .card {
