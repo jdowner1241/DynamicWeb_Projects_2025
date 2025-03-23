@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+	
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="author" content="group">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/animations.css" media="screen">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="address/style.css" />
+        <script src="address/index.js"></script>
+        <script src="address/geo.js"></script>
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleSecondary.css">
+        <!-- Skin -->
+        <link rel="stylesheet" href="css/colors/blue.css" class="colors">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/theme-responsive.css">
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/vtdi_logo.png">
+
+
+    </head>
+<body class="boxed home">
+
+
+    <div class="page-mask">
+        <div class="page-loader">
+            <div class="spinner"></div>
+            Loading...
+        </div>
+    </div>
+
+    <div class="wrap">
+        <!-- Header -->
+        <header id="header">
+          
+            <!-- Main Header -->
+            <div class="main-header">
+                <div class="container">
+              
+                    <!-- Logo -->
+                    <div class="logo pull-left">
+                        <h1>
+                            <a href="index.html">
+                            <img class="logo-color" src="img/vtdi_logo.png" alt="gallaxy" width="60" height="60">
+                            Dynamic Web API Usage
+                            </a>
+                        </h1>
+                    </div>
+                    <!-- /Logo -->
+                    <!-- Main Nav -->
+                
+                    <div class="container" style="background-color: #f8f9fa; padding: 20px; border-radius: 5px;">
+                        <div class="row" style="justify-content: space-between; align-items: center;">
+                            <div class="col-md-12">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent; font-size: 2rem;">
+                                    <span class="navbar-toggler-icon" style="font-size: 2rem; color: #000;"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav" style="list-style: none; padding: 0; margin: 0; display: flex; gap: 50px; font-size: 2rem;">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="https://dynamicweb2025m3ayoutube.netlify.app/" style="text-decoration: none; color: #007bff; font-weight: bold;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='#007bff';">Youtube API</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://dynamicweb2025m3aanalogclock.netlify.app/" style="text-decoration: none; color: #007bff; font-weight: bold;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='#007bff';">Analog Clock API</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://dynamicweb2025m3anytimes.netlify.app/" style="text-decoration: none; color: #007bff; font-weight: bold;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='#007bff';">Ny Times API</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://dynamicweb2025m3agooglemaps.netlify.app/" style="text-decoration: none; color: #007bff; font-weight: bold;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='#007bff';">Google Maps API</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="mobile navbar-header">
+                        <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
+                        <i class="fa fa-bars fa-2x"></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Header --> 
+        <!-- Main Section -->
+        <section id="main">
+            <div class="breadcrumb-wrapper">
+                <div class="pattern-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <h2 class="title">Module 3 : Google Api</h2>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="about-banner" style="position: relative;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="banner-img">
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /Main Content -->
+            <label class="full-field">
+                <!-- Avoid the word "address" in id, name, or label text to avoid browser autofill from conflicting with Place Autocomplete. Star or comment bug https://crbug.com/587466 to request Chromium to honor autocomplete="off" attribute. -->
+                <span class="form-label">Enter Address*</span>
+                <input id="ship-address" name="ship-address"required autocomplete="on" />
+            </label>
+
+            <!--<label class="full-field"> 
+              <span class="form-label">Apartment, unit, suite, or floor #</span>
+              <input id="address2" name="address2" />
+            </label> -->
+            <label class="full-field">
+              <span class="form-label">City*</span>
+              <input id="locality" name="locality" required />
+            </label>
+            <label class="slim-field-left">
+              <span class="form-label">Parish*</span>
+              <input id="state" name="state" required />
+            </label>
+                 
+            <button type="button" class="btn btn-success" id="payBtn" onclick="info();">Locate</button>
+
+            <button type="button" class="btn btn-success" id="payBtn" onclick="getLocation();">GeoLocation</button>
+            
+            <button type="button" class="btn btn-danger" id="payBtn"  onclick="showModal();">Find Route</button>
+
+        </section>
+
+        </br>
+
+        <section id="modals">
+  
+            <script src="js/custom.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm0jrSXqBAEVvS6EGS5koM863cspmHuUI&callback=initAutocomplete&libraries=places&v=weekly"
+                async>
+            </script>   
+    
+            <!-- Login Modal -->
+            <div class="modal login fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="form-signin-heading modal-title" id="myModalLabel">Map Direction</h2>
+                        </div>
+                        <form method="post" id="login">
+                            <div class="modal-body">
+                                <fieldset>
+                                    <label class="full-field">
+                                        <!-- Avoid the word "address" in id, name, or label text to avoid browser autofill from conflicting with Place Autocomplete. Star or comment bug https://crbug.com/587466 to request Chromium to honor autocomplete="off" attribute. -->
+                                        <span class="form-label">Enter Address*</span>
+                                        <input id="ship-address2" name="ship-address2"required autocomplete="on" />
+                                      </label>
+
+                                      <!--<label class="full-field"> 
+                                        <span class="form-label">Apartment, unit, suite, or floor #</span>
+                                        <input id="address2" name="address2" />
+                                      </label> -->
+                                      <label class="full-field">
+                                        <span class="form-label">City*</span>
+                                        <input id="locality2" name="locality2" required />
+                                      </label>
+                                      <label class="slim-field-left">
+                                        <span class="form-label">Parish*</span>
+                                        <input id="state2" name="state2" required />
+                                      </label>
+                                </fieldset>
+                            </div>
+                            <div class="modal-footer">
+                            
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" onclick="info2();" class="btn btn-color">Direction</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Logan Modal -->
+            <!-- Registration Modal -->
+        
+            <!-- /Registration Modal -->
+        </section>
+
+        <!--Moving Footer-->
+        <!-- /Main Section -->
+        <!-- Footer Start -->
+        <footer id="footer">
+            <div class="pattern-overlay">
+                <!-- Footer Top Start -->
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <iframe class="col-lg-12" id="newmap"
+                                width="600"
+                                height="450"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="">
+                            </iframe> 
+
+                            <!-- Group Members -->
+                            <section class="col-lg-12 col-md-12 col-xs-12 col-sm-12 footer-three">
+                                <h3 class="light">Google Map</h3>
+                                <section class="col-lg-12 col-md-12 col-xs-12 col-sm-12 footer-one">
+                                    <p class="light" id="demo">Geo Location</p>
+                                    <div class="col-lg-12" id="map"></div>
+                                </section>
+
+                                <br>
+                                <hr>
+                                <section class="col-lg-12 col-md-12 col-xs-12 col-sm-12 footer-three">
+                                    <h3 class="light">Team Members</h3>
+                                    <ul class="contact-us">
+                                        <li>
+                                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                                            <span>
+                                                <strong class="contact-pad">Imani Sterling: 2012045718</strong>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                                            <span><strong class="contact-pad">Jamario Downer: 2201011535 </strong> </span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                                        
+                                            <span><strong>Rickcolet Benjamin: 2201010382</strong></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                                            <span><strong>Daniel-Michael Palmer: 1917009055</strong></span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-user"></i>&nbsp;&nbsp;
+                                            <span><strong> Shameka Taylor : 1817002318</strong></span>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+
+                <!-- Footer Top End --> 
+                <!-- Footer Bottom Start -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                                <p class="credits">&copy; Copyright 2025 by <a href="#">VTDI STUDENTS</a>. All Rights Reserved. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom End --> 
+                <!-- /Footer Bottom --> 
+        </footer>
+    </div>
+            <!-- Modal -->
+          
+            <!-- Scroll To Top --> 
+            <div>
+                <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+            </div>
+        <!-- Wrap End -->
+        <!-- The Scripts -->
+        <script src="jsAdded/app.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-1.0.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script> 
+        <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/jquery.wait.js"></script>
+        <script src="js/fappear.js"></script> 
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/tweetMachine.js"></script>
+        <script src="js/tytabs.js"></script>
+        <script src="js/jquery.gmap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jflickrfeed.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        
+        <script src="js/wow.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm0jrSXqBAEVvS6EGS5koM863cspmHuUI&callback=initAutocomplete2&libraries=places&v=weekly"
+            async>
+        </script>
+
+    </body>
+</html>
+
