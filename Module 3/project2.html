@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+	
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="author" content="group">
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/animations.css" media="screen">
+
+      
+ 
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Skin -->
+        <link rel="stylesheet" href="css/colors/red.css" class="colors">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/theme-responsive.css">
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/vtdi_logo.png">
+
+
+    </head>
+    <body class="boxed home">
+
+        <style>
+
+            .card {
+              /* Add shadows to create the "card" effect */
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+              padding: 2px 16px;
+            }
+            
+            /* On mouse-over, add a deeper shadow */
+            .card:hover {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+            .error{
+                color:red;
+            }
+                        </style>
+
+
+
+
+        <div class="page-mask">
+            <div class="page-loader">
+                <div class="spinner"></div>
+                Loading...
+            </div>
+        </div>
+        <div class="wrap">
+            <!-- Header -->
+            <header id="header">
+          
+                <!-- Main Header -->
+                <div class="main-header">
+                    <div class="container">
+              
+                        <!-- Logo -->
+                        <div class="logo pull-left">
+                            <h1>
+                                <a href="index.html">
+                                <img class="logo-color" src="img/vtdi_logo.png" alt="gallaxy" width="60" height="60">
+                                </a>
+                            </h1>
+                        </div>
+                        <!-- /Logo -->
+                        <!-- Mobile Menu -->
+                        <div class="mobile navbar-header">
+                            <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
+                            <i class="fa fa-bars fa-2x"></i>
+                            </a> 
+                        </div>
+                 
+            </header>
+            <!-- /Header --> 
+            <!-- Main Section -->
+            <section id="main">
+                <div class="breadcrumb-wrapper">
+                    <div class="pattern-overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                    <h2 class="title">Dynamic Design Module 2 Assignment</h2>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Content -->
+                <div class="about-banner">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="banner-img">
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-jobs margin-top40">
+                    <div class="container">
+                        <div class="row padding-top40 padding-bottom40">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="job-details">
+                               
+                                    <!-- Accordin Question 1 -->
+                                    <div class="accordionMod panel-group">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-toggle">Question 1 : Parsing and Manipulating JSON Data</h4>
+                                            <section class="accordion-inner panel-body">
+                                       
+
+                                                <h3>Employee List</h3>
+                                                <button id="btnLoadDataQus1a">Load Employee List</button>
+                                                <div id="demoEmployeeListQus1" class="card">
+                                                </div>
+                                        
+                                                <p>Manipulating Data</p>
+                                                <button id="btnConsoleQus1b">Manipulate List via console</button>
+                                                <br>
+                                                <p>Working with LocalStorage</p>
+                                                <button id="btnLocalStorageQus1c">Update Local Storage</button>
+                                            </section>
+                                        </div>
+
+
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-toggle">Question 2 : Form Design and Validation</h4>
+                                           
+
+                                       
+                                            <section class="accordion-inner panel-body">
+                                                <button type="button" onclick="myFunction()" class="btn btn-danger" data-toggle="modal" data-target="#registrationModal">
+                                                    Payment
+                                                   </button>
+                                                <div class="modal register fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModal" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h2 class="form-signin-heading modal-title" id="registrationModalLabel">Billing Information</h2>
+                                                        </div>
+                                                        <form id="paymentForm">
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-6">
+                                                                                <label for="firstName">First Name *</label>
+                                                                                <input class="form-control" type ="text" id="firstName">
+                                                                                <span class="error" id="firstNameError"></span>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <label for="lastName">Last Name*</label>
+                                                                                <input class="form-control" type ="text" id="lastName">
+                                                                                <span class=" error" id="lastNameError"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label for="email">Email*</label>
+                                                                                <input  class="form-control" type ="email" id="email">
+                                                                                <span class=" error" id="emailError"></span>
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label for="address">Address*</label>
+                                                                                <input class="form-control" type ="text" id="address">
+                                                                                <span class="error" id="addressError"></span>
+                                                                           
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <h3>&nbsp;&nbsp;Payment Method</h3>
+                                                                            <div class="col-md-6">
+                                                                             
+                                                                                <span style="padding-right:3px; padding-top: 3px;">
+                                                    
+                                                                                    <img class="" src="img/creditcard.jpeg" width="80px"></img> Credit Card
+                                                                                
+                                                                                    </span>
+                                    
+                                    
+                                                                                <input type="radio"  class="form-group" name="payment" id="Visa" value="Mastercard" checked>
+                                                                                <span>
+                                                                                 
+                                                                 
+                                                                               
+                                                                          
+                                                                          
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <img  class="" src="img/paypal.png" width="70px"></img> Pay pal
+                                    
+                                                                                 
+                                                                            </span>
+                                                                        <input type ="radio"  class="form-group" name ="payment" id="paypal">   
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                    
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-12">
+                                                                                <label> Card Number*</label>
+                                                                                <input class="form-control" type ="text" id="cardNumber" maxlength="16">
+                                                                                <span class = "error" id="cardNumberError"></span>
+                                                                           
+                                                                           
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="form-group">
+                                                                            <h3>&nbsp;&nbsp;Card Info</h3>
+                                                                            <div class="col-md-6">
+                                                                             
+                                                                                <label>Expiry Date (MM/YY)*</label>
+                                                                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                                                                                <span class ="error" id="expiryDateError"></span> 
+                                    
+                                    
+                                                                          
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <label>CVV*</label>
+                                                                                <input class="form-control" type ="text" id="cvv" maxlenght="3">
+                                                                                <span class="error" id="cvvError"></span>
+                                                                
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h3>&nbsp;&nbsp;Shipping Info</h3>
+                                                                           
+                                                                            <label for="sameAsBilling"></label>
+                                                                            <input class="form-control-sm"  type="checkbox" id="sameAsBilling" checked> same as Billing Information
+                                                                        
+                                                                              
+                                                                                            <label for="lastName">Street Addres*</label>
+                                                                                               <input id="shippingAddress" class="form-control" type ="text">
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                   
+                                                                                  
+                                                                                </div> 
+                                                                         </div>
+                                                                         <div class="row">
+                                                                            <div class=" col-md-6">
+                                                                                
+                                                                                    <label for="state">State/Province*</label>
+                                                                                    <input  class="form-control" type ="text" id="state">
+                                                                          
+                                                                                </div>
+                                                                            <div class="col-md-6">
+                                                                                
+                                                                                <label for="countrySelect">Select a Country:</label>
+                                                                                 <input list="browsers" name="browser" class="custom-select custom-select-sm form-control "> 
+                                                                                 <datalist id="browsers" class=""> 
+                                                                                    <select id="countrySelect" class="form-control col-md-8">
+                                                                                        <option value="">--Select a Country--</option>
+                                                                                    </select> 
+                                                                                    </datalist>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    <button type="submit" class="btn btn-success">Pay Now</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           
+                                            </section>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-toggle">Question 3 : Loading and Displaying Data in DataTables</h4>
+                                            <section class="accordion-inner panel-body">
+                                           <!-- Questions 3 -->
+    <div>
+        <h2>Question 3 : Loading and Displaying Data in DataTables.</h2>
+        <h3>Employee Information</h3>
+        <table id="employeeTableQue3" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <!-- <td>10</td>
+            <td>samuel</td>
+            <td>smith</td>
+            <td>samuelsmith@gmail.com</td>
+            <td>Information systems</td>
+            <td>350,000</td> -->
+                <!-- Data will be populated here by DataTables -->
+            </td>
+        </table>
+    </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <!-- /Accordin -->
+                                </div>
+                                <!-- Star -->
+                                <div class="star-divider  margin-topminus30 padding-top25">
+                                    <div class="star-divider-icon">
+                                        <i class=" fa fa-star"></i>
+                                    </div>
+                                </div>
+                     
+                                <!-- Star -->
+                                <div class="star-divider  margin-topminus30 padding-top25">
+                                    <div class="star-divider-icon">
+                                        <i class=" fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <!-- /Star -->
+                              
+                            </div>
+
+                            <!--FORM PAYMENT-->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- /Main Content -->
+            </section>
+
+
+           
+
+
+
+
+            <!-- /Main Section -->
+            <!-- Footer Start -->
+            <footer id="footer">
+                <div class="pattern-overlay">
+                    <!-- Footer Top Start -->
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <section class="col-lg-3 col-md-3 col-xs-12 col-sm-3 footer-one">
+                                    <h3 class="light">About</h3>
+                                    
+
+<!-- Group Members -->    
+<section class="col-lg-12 col-md-12 col-xs-12 col-sm-12 footer-three">
+    <h3 class="light">Team Members</h3>
+    <ul class="contact-us">
+        <li>
+            <i class="fa fa-user"></i>&nbsp;&nbsp;
+            <span> 
+                <strong class="contact-pad">Imani Sterling: 2012045718</strong> 
+            </span>
+        </li>
+        <li>
+            <i class="fa fa-user"></i>&nbsp;&nbsp;
+            <span><strong class="contact-pad">Jamario Downer: 2201011535 </strong> </span>
+        </li>
+        <li>
+            <i class="fa fa-user"></i>&nbsp;&nbsp;
+            
+            <span><strong>Rickcolet Benjamin: 2201010382</strong></span>
+        </li>    
+         <li>
+            <i class="fa fa-user"></i>&nbsp;&nbsp;
+            <span><strong>Daniel-Michael Palmer: 1917009055</strong></span>
+        </li>
+        <li>
+            <i class="fa fa-user"></i>&nbsp;&nbsp;
+            <span><strong> Shameka Taylor : 1817002318</strong></span>
+        </li>
+    </ul>
+
+
+
+
+
+                                </section>
+                                
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Top End --> 
+                    <!-- Footer Bottom Start -->
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                                    <p class="credits">&copy; Copyright 2025 by <a href="#">VTDI STUDENTS</a>. All Rights Reserved. </p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 ">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Bottom End --> 
+                    <!-- /Footer Bottom --> 
+                </div>
+            </footer>
+            <!-- Modal -->
+            <section id="modals">
+                <!-- Login Modal -->
+                <div class="modal login fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="form-signin-heading modal-title" id="myModalLabel">Login</h2>
+                            </div>
+                            <form method="post" id="login">
+                                <div class="modal-body">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <input class="form-control" id="username" name="username" type="text" placeholder="Username" value="" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <input class="form-control" type="email" id="email2" name="email2" placeholder="Email" value="" required>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="password-recovery.html" class="pull-left">(Lost Password?)</a>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-color">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Logan Modal -->
+                <!-- Registration Modal -->
+            
+                <!-- /Registration Modal -->
+            </section>
+            <!-- Scroll To Top --> 
+            <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <!-- Wrap End -->
+        <!-- The Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-1.0.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script> 
+        <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/jquery.wait.js"></script>
+        <script src="js/fappear.js"></script> 
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/tweetMachine.js"></script>
+        <script src="js/tytabs.js"></script>
+        <script src="js/jquery.gmap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jflickrfeed.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+    
+       <!--
+        needed files
+            <script src="js/waypoints.min.js"></script> 
+       -->
+       
+        <script src="js/wow.js"></script>
+
+          <!--
+        needed files
+       -->
+     
+        <script src="js/custom.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+
+        
+        <script src="jsquestions/qus1.js"></script>
+        <script src="jsquestions/qus2.js"></script>
+        <script src="jsquestions/qus3.js"></script>
+
+    </body>
+</html>
+
