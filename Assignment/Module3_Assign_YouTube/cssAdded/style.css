@@ -8,6 +8,8 @@
     border: 1px solid #dee2e6; /* Light border */
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .card-title {
@@ -114,11 +116,30 @@
     margin-top: 10px;
 }
 
+.play-video-btn {
+    background-color: #428bca !important; 
+    color: snow; 
+    padding: 6px 10px;
+    font-size: 13px;
+    border-color: #357ebd;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.play-video-btn:hover {
+    background-color: purple !important;
+    color: snow;
+    transform: scale(1.1); /* Grow effect */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
 /* Media Queries for Videos */
 @media (max-width: 768px) {
     .card video {
         max-width: 100%;
         height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
@@ -126,5 +147,7 @@
     .card video {
         max-width: 100%;
         height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }

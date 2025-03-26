@@ -26,19 +26,24 @@ function displayVideos(videos) {
         const videoTitle = video.snippet?.title || 'No Title';
         const videoThumbnail = video.snippet?.thumbnails?.medium?.url || '';
         const col = document.createElement('div');
-        col.className = 'col-md-4 mb-4'; // Bootstrap column class for 3 columns per row
+        col.className = 'col-md-4 mb-4'; // Bootstrap column class for 3 columns per row and margin-bottom for spacing
 
         col.innerHTML = `
-            <div class="card">
-                <img class="card-img-top" src="${videoThumbnail}" alt="${videoTitle}">
-                <div class="card-body">
-                    <h5 class="card-title">${videoTitle}</h5>
-                    <button class="btn btn-primary play-video-btn" data-video-id="${videoId}">Play Video</button>
+            <div class="card h-100 d-flex flex-column" style="max-height: 350px; overflow: hidden;">
+            <img class="card-img-top" src="${videoThumbnail}" alt="${videoTitle}" style="height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-truncate" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 3em;">${videoTitle}</h5>
+                <div class="mt-auto">
+                <button class="btn btn-primary play-video-btn mb-2" data-video-id="${videoId}">Play Video</button>
                 </div>
+            </div>
             </div>
         `;
         row.appendChild(col);
     });
+
+    // Add margin between rows
+    row.style.marginBottom = '20px';
 
     videoContainer.appendChild(row);
 
@@ -58,12 +63,14 @@ function displayVideos(videos) {
 
 // Method to play the video directly in the window
 function playVideo(videoId) {
+    const videoTitle = document.querySelector(`[data-video-id="${videoId}"]`).closest('.card').querySelector('.card-title').textContent;
     const videoContainer = document.getElementById('video-container');
     videoContainer.innerHTML = `
-        <div class="embed-responsive embed-responsive-16by9">
+        <h3 class="mb-3 text-center" style="font-size: 3rem; font-weight: bold; color: #333; margin-top: 10px; margin-bottom: 20px;">${videoTitle}</h3>
+        <div class="embed-responsive embed-responsive-16by9" style="margin-top: 5px; margin-bottom: 20px;">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
         </div>
-        <button class="btn btn-secondary mt-3" id="back-button">Back to Videos</button>
+        <button class="btn btn-secondary play-video-btn mt-3 mb-3" id="back-button" style="margin-bottom: 20px;">Back to Videos</button>
     `;
 
     // Add event listener to back button
