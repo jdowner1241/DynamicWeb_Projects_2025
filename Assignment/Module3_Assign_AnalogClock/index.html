@@ -22,14 +22,15 @@
 
         <!-- Theme CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="cssAdded/style.css">
+       
         <!-- Skin -->
         <link rel="stylesheet" href="css/colors/blue.css" class="colors">
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="css/theme-responsive.css">
         <!-- Favicons -->
         <link rel="shortcut icon" href="img/vtdi_logo.png">
-
+        
+        <link rel="stylesheet" href="cssAdded/style.css">
 
     </head>
 <body class="boxed home">
@@ -115,11 +116,21 @@
             <!-- Main Content -->
             <div class="about-banner" style="position: relative;">
                 <div class="container-fluid">
-                    <div class="row">
-                        
-                        <!--Analog clock would go here-->
 
+                    <div class="row">
+                        <h3 class="clockHeader bold text-center">Analog Clock</h3>
+                        <div class="clock">
+                            <canvas id="clockCanvas" width="400" height="400"></canvas>
+                        </div>
                     </div>
+                    <div class="row">
+                        <h3 class="DatetimeHeader bold text-center">Date and Time </h3>
+                        <div class="DateTime text-center">
+                            <p id="date"></p>
+                            <p id="time"></p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             

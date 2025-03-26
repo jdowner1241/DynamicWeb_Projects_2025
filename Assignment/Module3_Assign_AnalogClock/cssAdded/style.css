@@ -105,3 +105,51 @@
     }
 }
 
+/* Custom CSS for Analog Clock */
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f0f0;
+
+}
+.clockHeader{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #333;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.DateTime > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.DatetimeHeader {
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: 700;
+    font-size: 6rem;
+    color: #333;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+canvas {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
